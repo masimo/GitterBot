@@ -190,7 +190,6 @@ app.get('/', function(req, res) {
     res.render('landing');
 });
 
-
 app.get('/home', function(req, res) {
     if (!req.user) return res.redirect('/');
 
@@ -215,9 +214,6 @@ app.get('/home', function(req, res) {
             rooms: rooms
         });
     });
-
-
-
 });
 
 app.listen(port);
